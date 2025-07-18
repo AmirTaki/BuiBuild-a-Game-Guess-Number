@@ -19,7 +19,6 @@ checkButton.addEventListener("click", (e)=> {
         // [checkButton.textContent, guess.style.color] = ['Replay', '#333']
         checkButton.innerText = "Replay"
         guess.style.color = "#333"
-
      
     } 
     else if(inputValue > randomNum && inputValue < 100){
@@ -33,5 +32,9 @@ checkButton.addEventListener("click", (e)=> {
     else {
         [guess.innerText, ramainChences.innerText] = ["Your  number is invalid", chance]
         guess.style.color  = "#De0611"   
+    }
+    if(chance == 0){
+        [checkButton.innerText, input.disabled, inputValue, guess.innerText, guess.style.color] = ["Replay", true, "", "You lost the game", "#De0611"]
+
     }
 })
