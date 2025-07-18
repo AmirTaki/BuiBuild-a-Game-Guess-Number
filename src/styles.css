@@ -58,6 +58,11 @@ header {
     border: none;
     background: #4a98f7;
     color: #fff;   
+    cursor: pointer;
+    transition: scale .3s;
+}
+.input-field button:active  {
+    transform:  scale(.97);
 }
 
 input::-webkit-inner-spin-button ,
