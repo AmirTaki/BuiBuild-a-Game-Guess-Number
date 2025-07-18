@@ -43,12 +43,19 @@ header {
     width: calc(100% / 2 - 30px);
     outline: none;
     padding: 0 20px;
-    border-radius : 8px
+    border-radius : 8px;
+    font-size: 18px;
 }
 
 .input-field input{
     border : 1px solid #aaa;
     text-align: center;
-    font-size: 18px;
     color: #707070
+}
+
+.input-field button  {
+    border: none;
+    background: #4a98f7;
+    color: #fff;
+    
 }
