@@ -26,3 +26,7 @@ header {
     font-weight : 400;
     color: #333;
 }
+
+.wrapper p {
+    color: #333;  
+}
