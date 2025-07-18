@@ -22,8 +22,12 @@ checkButton.addEventListener("click", (e)=> {
 
      
     } 
-    if(inputValue > randomNum && inputValue < 100){
+    else if(inputValue > randomNum && inputValue < 100){
         [guess.innerText, ramainChences.innerText] = ["You guess is high", chance]
         guess.style.color  =  "#333"
-        }
+    }
+    else if (inputValue < randomNum && inputValue > 0){
+        [guess.innerText, ramainChences.innerText] = ["You guess in low", chance]
+        guess.style.color  = "#333"
+    }
 })
