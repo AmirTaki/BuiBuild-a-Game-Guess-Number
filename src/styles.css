@@ -30,3 +30,10 @@ header {
 .wrapper p {
     color: #333;  
 }
+
+.input-field{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    margin : 25px 0;
+}
