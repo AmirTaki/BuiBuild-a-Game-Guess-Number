@@ -53,7 +53,9 @@ header {
     color: #707070;
     width: 110px
 }
-
+.input-field input:disabled {
+    cursor: none;
+}
 .input-field button  {
     border: none;
     background: #4a98f7;

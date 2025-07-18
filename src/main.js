@@ -15,11 +15,15 @@ checkButton.addEventListener("click", (e)=> {
     chance--;
     let inputValue = input.value
     if(inputValue == randomNum){
-        // [guess.textContent, checkButton.disabled] = ["Congratulations", true]
+        [guess.innerText, input.disabled] = ["Congratulations", true]
         // [checkButton.textContent, guess.style.color] = ['Replay', '#333']
-        guess.innerText = "Congratulations"
-        checkButton.disabled = true
         checkButton.innerText = "Replay"
         guess.style.color = "#333"
-    }
+
+     
+    } 
+    if(inputValue > randomNum && inputValue < 100){
+        [guess.innerText, ramainChences.innerText] = ["You guess is high", chance]
+        guess.style.color  =  "#333"
+        }
 })
