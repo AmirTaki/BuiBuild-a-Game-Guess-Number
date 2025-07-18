@@ -34,6 +34,13 @@ header {
 .input-field{
     display: flex;
     justify-content: center;
-    gap:30px;
+    gap:15px;
     margin : 25px 0;
+}
+.input-field input,
+.input-field button {
+    height: 50px;
+    width: calc(100% / 2 - 30px);
+    outline: none;
+    padding: 0 20px;
 }
