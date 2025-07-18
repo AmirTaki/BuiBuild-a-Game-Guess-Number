@@ -33,7 +33,8 @@ checkButton.addEventListener("click", (e)=> {
         [checkButton.innerText, input.disabled, inputValue, guess.innerText, guess.style.color] = ["Replay", true, "", "You lost the game", "#De0611"]
 
     }
-    if(chance < 0){
+    if(chance < 0 || checkButton.innerText === "Replay"){
         window.location.reload()
     }
+ 
 })
